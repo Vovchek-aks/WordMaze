@@ -44,19 +44,5 @@ for i in maze_words:
 if f:
     print('Не найдено')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while 1:
+    input()
