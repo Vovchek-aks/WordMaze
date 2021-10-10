@@ -1,11 +1,11 @@
+from time import time
+
+t = time()
+
 WORDS = set(open('words.txt', encoding='UTF-8').read().split())
 
-maze = []
+maze = open('maze.txt', encoding='UTF-8').read().split('\n')
 
-s = input()
-while s:
-    maze += [s]
-    s = input()
 
 # print(*maze, sep='\n')
 
@@ -43,6 +43,8 @@ for i in maze_words:
         break
 if f:
     print('Не найдено')
+
+print(time() - t)
 
 while 1:
     input()
